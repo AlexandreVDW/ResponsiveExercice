@@ -1,0 +1,46 @@
+/* contenu pour telephone */
+body {
+    background-color: red;
+    font-size:.9375rem;
+    display:flex;
+    flex-direction: column;
+}
+/* .medium, .large{
+     display:none; 
+} */
+
+/* contenu pour tablette */
+@media only screen and (min-width: 410px) {
+    body {background-color: green;
+          font-size:1.25rem; 
+          display:flex;
+          flex-direction: row;
+          flex-wrap:wrap;
+          text-align:center;}
+        .small{
+            width:66.66%;
+        }
+        .medium{
+            width:33.34%;
+        }
+        .large{
+            width:100%;
+        }    
+   
+    /* .small,.large {display:none;}
+    .medium{
+        display: inline; } */
+}
+/* contenu pour pc */
+@media only screen and (min-width: 768px) {
+    body {background-color: blue;
+          font-size:1.5625rem;
+          display:flex;
+          flex-direction:row;
+     }
+    .small, .medium, .large{
+        width:33.33%;
+    }
+    /* .small, .medium{display:none;} */
+    /* .large{display: inline;} */
+}
